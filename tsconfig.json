@@ -1,6 +1,15 @@
 {
   "compilerOptions": {
-    "target": "es2022",
-    "watch": true,
-  }
+    "lib": [ "es6", "es2021", "esnext" ],
+    "module": "es2022",
+    "target": "es2021",
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "declaration": true,
+    "declarationMap": true,
+    "inlineSourceMap": true,
+    "inlineSources": true
+  },
+  "exclude": ["node_modules", "dist"],
 }

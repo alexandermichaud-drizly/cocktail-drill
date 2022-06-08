@@ -11,10 +11,12 @@ export enum Spirits {
   AMARO = "amaro",
   APEROL = "aperol",
   APPLEJACK = "applejack",
+  BENEDICTINE = "bénédictine",
   BOURBON = "bourbon whiskey",
   BRANDY = "brandy",
   BRANDY_APPLE = "apple brandy",
   CACAO = "creme de cacao",
+  CACHACA = "cachaça",
   CAMPARI = "campari",
   CHARTREUSE_GREEN = "green chartreuse",
   CHARTREUSE_YELLOW = "yellow chartreuse",
@@ -27,6 +29,11 @@ export enum Spirits {
   MEZCAL_REPASADO = "repasado mezcal",
   NOYAUX = "creme de noyaux",
   ORANGE = "curaçao or triple sec",
+  RUM_UNAGED = "unaged rum",
+  RUM_AGED = "lightly aged rum",
+  RUM_DARK = "dark rum",
+  RUM_OVERPROOF = "overproof rum",
+  RUM_151 = "151 proof rum",
   RYE = "rye whiskey",
   SCOTCH_BLENDED = "blended scotch whiskey",
   SCOTCH_SINGLE_MALT = "single malt scotch whiskey",
@@ -62,7 +69,9 @@ export enum SyrupsAndSweeteners {
   GRENADINE = "grenadine",
   HONEY = "honey",
   LIME_CORDIAL = "lime cordial",
+  ORGEAT = "orgeat",
   SIMPLE = "simple syrup",
+  SUGAR = "sugar",
 }
 
 export enum MiscellaneousIngredients {
@@ -71,6 +80,7 @@ export enum MiscellaneousIngredients {
   EGG = "whole egg",
   EGG_WHITE = "egg white",
   ORANGE_FLOWER_WATER = "orange flower water",
+  SELTZER = "seltzer",
 }
 
 export enum Preparations {
@@ -85,7 +95,8 @@ export enum Quantities {
   FRUIT = "fruit(s) worth of juice",
   OUNCE = "oz.",
   RINSE = "rinse",
-  SPLASH = "splash"
+  SPLASH = "splash",
+  TEASPOON = "tsp.",
 }
 
 export enum Garnishes {
