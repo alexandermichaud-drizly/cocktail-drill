@@ -13,6 +13,23 @@ import {
 
 const cocktails: RecipeType[] = [
   {
+    name: "Acacia",
+    ingredients: [
+      { ingredient: Spirits.GIN_LONDON, quantity: 2, units: Units.OUNCE},
+      { ingredient: Spirits.BENEDICTINE, quantity: 0.75, units: Units.OUNCE},
+      { ingredient: Spirits.KIRSCH, quantity: 0.25, units: Units.OUNCE},
+    ],
+    preparation: [
+      Preparations.STIR
+    ],
+    servedIn: Vessels.COCKTAIL,
+    servedWithIce: false,
+    garnishes: [
+      Garnishes.LEMON_EXPRESSED,
+      Garnishes.LEMON_PEEL
+    ]
+  },
+  {
     name: "Brandy and Benedictine",
     ingredients: [
       { ingredient: Spirits.BRANDY, quantity: 1.5, units: Units.OUNCE},
@@ -22,8 +39,10 @@ const cocktails: RecipeType[] = [
       Preparations.STIR
     ],
     servedIn: Vessels.ROCKS,
-    servedWithIce: false,
-    garnish: Garnishes.LEMON_EXPRESSED
+    servedWithIce: true,
+    garnishes: [
+      Garnishes.LEMON_EXPRESSED,
+    ]
   },
   {
     name: "Corpse Reviver No. 1",

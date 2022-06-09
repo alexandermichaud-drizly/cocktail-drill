@@ -1,4 +1,4 @@
-import { Vessels, Spirits, Bitters, Juices, SyrupsAndSweeteners, MiscellaneousIngredients, Preparations, Units} from './constants';
+import { Vessels, Spirits, Bitters, Juices, SyrupsAndSweeteners, MiscellaneousIngredients, Preparations, Units, Garnishes} from './constants';
 
 type VesselsType = `${Vessels}`;
 type IngredientTypes = `${Spirits}` | `${Bitters}` |`${Juices}` | `${SyrupsAndSweeteners}` | `${MiscellaneousIngredients}`;
@@ -9,8 +9,8 @@ type IngredientsWithQuantities = { ingredient: IngredientTypes, units: QuantityT
 export type RecipeType = {
   name: string;
   ingredients: IngredientsWithQuantities[];
-  garnish?: string;
+  garnishes?: Garnishes[];
   preparation: PreparationTypes[];
   servedIn: VesselsType;
-  servedWithIce: false;
+  servedWithIce: boolean;
 }
