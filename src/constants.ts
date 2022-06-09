@@ -24,6 +24,7 @@ export enum Spirits {
   BOURBON = "bourbon whiskey",
   BRANDY = "brandy",
   BRANDY_APPLE = "apple brandy",
+  BRANDY_APPLE_HIGH_PROOF = "high-proof apple brandy",
   CACAO = "creme de cacao",
   CACHACA = "cachaça",
   CAMPARI = "campari",
@@ -33,6 +34,7 @@ export enum Spirits {
   GIN_LONDON = "london dry gin",
   GIN_OLD_TOM = "old tom gin",
   KIRSCH = "kirschwasser",
+  MARASCHINO = "maraschino liqueur",
   MENTHE = "creme de menthe",
   MEZCAL_ANEJO = "añejo mezcal",
   MEZCAL_BLANCO = "blanco mezcal",
@@ -82,6 +84,7 @@ export enum SyrupsAndSweeteners {
   GRENADINE = "grenadine",
   HONEY = "honey",
   LIME_CORDIAL = "lime cordial",
+  MAPLE = "maple syrup",
   ORGEAT = "orgeat",
   SIMPLE = "simple syrup",
   SUGAR = "sugar",
@@ -102,6 +105,7 @@ export enum Preparations {
   FLOAT = "pour float ingredient on top",
   SHAKE = "shake with ice",
   STIR = "stir with ice",
+  STRAIN = "pour through a fine strainer",
   TOP = "top with sparkling water or wine"
 }
 

@@ -91,6 +91,68 @@ const cocktails: RecipeType[] = [
     servedWithIce: false,
   },
   {
+    name: "Americano",
+    ingredients: [
+      { ingredient: Spirits.CAMPARI, quantity: 1, units: Units.OUNCE},
+      { ingredient: Spirits.VERMOUTH_ITALIAN, quantity: 1, units: Units.OUNCE},
+      { ingredient: MiscellaneousIngredients.SELTZER, quantity: 2, units: Units.OUNCE},
+    ],
+    preparation: [
+      Preparations.STIR,
+    ],
+    servedIn: Vessels.ROCKS,
+    servedWithIce: true,
+    garnishes: [
+      Garnishes.LEMON_PEEL
+    ]
+  },
+  {
+    name: "Applejack Rabbit",
+    ingredients: [
+      { ingredient: Spirits.BRANDY_APPLE_HIGH_PROOF, quantity: 1.75, units: Units.OUNCE},
+      { ingredient: SyrupsAndSweeteners.MAPLE, quantity: 0.5, units: Units.OUNCE},
+      { ingredient: Juices.LEMON, quantity: 0.5, units: Units.OUNCE},
+      { ingredient: Juices.ORANGE, quantity: 0.25, units: Units.OUNCE},
+    ],
+    preparation: [
+      Preparations.SHAKE,
+    ],
+    servedIn: Vessels.COCKTAIL,
+    servedWithIce: false,
+  },
+  {
+    name: "Army and Navy",
+    ingredients: [
+      { ingredient: Spirits.GIN_LONDON, quantity: 1.75, units: Units.OUNCE},
+      { ingredient: SyrupsAndSweeteners.ORGEAT, quantity: 0.75, units: Units.OUNCE},
+      { ingredient: Juices.LEMON, quantity: 0.5, units: Units.OUNCE},
+      { ingredient: Bitters.ANGOSTURA, quantity: 2, units: Units.DASH},
+    ],
+    preparation: [
+      Preparations.SHAKE,
+    ],
+    servedIn: Vessels.COCKTAIL,
+    servedWithIce: false,
+  },
+  {
+    name: "Aviation",
+    ingredients: [
+      { ingredient: Spirits.GIN_LONDON, quantity: 2, units: Units.OUNCE},
+      { ingredient: Juices.LEMON, quantity: 0.75, units: Units.OUNCE},
+      { ingredient: Spirits.MARASCHINO, quantity: 0.5, units: Units.OUNCE},
+      { ingredient: Spirits.VIOLETTE, quantity: 0.25, units: Units.OUNCE},
+    ],
+    preparation: [
+      Preparations.SHAKE,
+      Preparations.STRAIN
+    ],
+    servedIn: Vessels.COCKTAIL,
+    servedWithIce: false,
+    garnishes: [
+      Garnishes.CHERRY
+    ]
+  },
+  {
     name: "Brandy and Benedictine",
     ingredients: [
       { ingredient: Spirits.BRANDY, quantity: 1.5, units: Units.OUNCE},
