@@ -1,6 +1,7 @@
-export enum GameModes {
-  RECIPE_MODE = "Full Recipe",
-  MISSING_INGREDIENT_MODE = "Missing Ingredient",
+export enum Modes {
+  RECIPE_MODE = "Drill Recipes",
+  MISSING_INGREDIENT_MODE = "Drill by Missing Ingredient",
+  SEARCH_MODE = "Search Recipes",
 }
 
 export enum Vessels {
@@ -15,6 +16,7 @@ export enum Vessels {
 
 export enum Spirits {
   ABSINTHE = "absinthe",
+  AMARETTO = "amaretto",
   AMARO = "amaro",
   APEROL = "aperol",
   APPLEJACK = "applejack",
@@ -74,6 +76,7 @@ export enum Juices {
 }
 
 export enum SyrupsAndSweeteners {
+  DEMERARA = "rich demerara syrup",
   FALERNUM = "falernum",
   FASSIONOLA = "fassionola",
   GRENADINE = "grenadine",

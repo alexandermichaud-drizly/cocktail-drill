@@ -65,6 +65,32 @@ const cocktails: RecipeType[] = [
     ]
   },
   {
+    name: "Alaska",
+    ingredients: [
+      { ingredient: Spirits.GIN_OLD_TOM, quantity: 2, units: Units.OUNCE},
+      { ingredient: Spirits.CHARTREUSE_YELLOW, quantity: 1, units: Units.OUNCE},
+      { ingredient: Bitters.ORANGE, quantity: 2, units: Units.DASH},
+    ],
+    preparation: [
+      Preparations.STIR,
+    ],
+    servedIn: Vessels.COCKTAIL,
+    servedWithIce: false,
+  },
+  {
+    name: "Amaretto Sour",
+    ingredients: [
+      { ingredient: Spirits.AMARETTO, quantity: 1.5, units: Units.OUNCE},
+      { ingredient: Juices.LEMON, quantity: 1, units: Units.OUNCE},
+      { ingredient: SyrupsAndSweeteners.DEMERARA, quantity: 1, units: Units.TEASPOON},
+    ],
+    preparation: [
+      Preparations.STIR,
+    ],
+    servedIn: Vessels.COCKTAIL,
+    servedWithIce: false,
+  },
+  {
     name: "Brandy and Benedictine",
     ingredients: [
       { ingredient: Spirits.BRANDY, quantity: 1.5, units: Units.OUNCE},

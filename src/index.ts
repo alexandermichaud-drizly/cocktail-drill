@@ -1,25 +1,30 @@
 #!/usr/bin/env node
 import inquirer from 'inquirer';
-import { GameModes } from './constants';
-import drillRecipes from './games/drill_recipes';
-import missingIngredients from './games/missing_ingredients';
+import { Modes } from './constants';
+import drillRecipes from './modes/drill_recipes';
+import missingIngredients from './modes/missing_ingredients';
+import searchRecipes from './modes/search_recipes';
 
 const userChoice = await inquirer.prompt({
-  name: "gameMode",
+  name: "mode",
   type: "list",
   message: "Choose how you'd like to practice",
-  choices: Object.values(GameModes),
+  choices: Object.values(Modes),
 });
 
-const { gameMode } = userChoice;
+const { mode } = userChoice;
 
-switch(gameMode) {
-  case GameModes.RECIPE_MODE: {
+switch(mode) {
+  case Modes.RECIPE_MODE: {
     drillRecipes();
     break;
   }
-  case GameModes.MISSING_INGREDIENT_MODE: {
+  case Modes.MISSING_INGREDIENT_MODE: {
     missingIngredients();
+    break;
+  }
+  case Modes.SEARCH_MODE: {
+    searchRecipes();
     break;
   }
 }
