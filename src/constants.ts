@@ -4,11 +4,13 @@ export enum GameModes {
 }
 
 export enum Vessels {
+  COCKTAIL = "cocktail glass",
   COUP = "coup",
   HIGHBALL = "highball glass",
+  MARGARITA_GLASS = "margarita glass",
   MARTINI = "martini glass",
   MULE = "mule mug",
-  ROCKS = "rocks glass",
+  ROCKS = "rocks glass"
 }
 
 export enum Spirits {
@@ -28,6 +30,7 @@ export enum Spirits {
   GALLIANO = "galliano",
   GIN_LONDON = "london dry gin",
   GIN_OLD_TOM = "old tom gin",
+  KIRSCH = "kirschwasser",
   MENTHE = "creme de menthe",
   MEZCAL_ANEJO = "añejo mezcal",
   MEZCAL_BLANCO = "blanco mezcal",
@@ -96,7 +99,7 @@ export enum Preparations {
   FLOAT = "pour float ingredient on top",
 }
 
-export enum Quantities {
+export enum Units {
   DASH = "dash",
   FRUIT = "fruit(s) worth of juice",
   OUNCE = "oz.",
@@ -107,7 +110,12 @@ export enum Quantities {
 
 export enum Garnishes {
   CHERRY = "cherry",
+  LEMON_EXPRESSED = "expression of lemon peel", 
   LEMON_PEEL = "peel of lemon",
   LEMON_WHEEL = "wheel of lemon",
+  LIME_EXPRESSED = "expression of lime peel", 
+  LIME_PEEL = "peel of lime",
   LIME_WHEEL = "wheel of lime",
+  ORANGE_EXPRESSED = "expression of orange peel",
+  ORANGE_PEEL = "peel of orange",
 }

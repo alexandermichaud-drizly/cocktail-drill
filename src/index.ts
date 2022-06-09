@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 import inquirer from 'inquirer';
 import { GameModes } from './constants';
-// import { RecipeType } from './types';
+import drillRecipes from './games/drill_recipes';
+import missingIngredients from './games/missing_ingredients';
 
 const userChoice = await inquirer.prompt({
   name: "gameMode",
@@ -10,4 +11,18 @@ const userChoice = await inquirer.prompt({
   choices: Object.values(GameModes),
 });
 
-console.log(`Your answer was ${userChoice.gameMode}`);
+const { gameMode } = userChoice;
+
+switch(gameMode) {
+  case GameModes.RECIPE_MODE: {
+    drillRecipes();
+    break;
+  }
+  case GameModes.MISSING_INGREDIENT_MODE: {
+    missingIngredients();
+    break;
+  }
+}
+
+console.log('Happy mixing!');
+process.exit();
