@@ -45,6 +45,7 @@ export enum Spirits {
   RYE = "rye whiskey",
   SCOTCH_BLENDED = "blended scotch whiskey",
   SCOTCH_SINGLE_MALT = "single malt scotch whiskey",
+  SHERRY = "sherry",
   SPARLKING = "sparkling wine",
   TEQUILA_ANEJO = "añejo tequila",
   TEQUILA_BLANCO = "blanco tequila",
@@ -68,6 +69,7 @@ export enum Juices {
   LEMON = "lemon",
   LIME = "lime",
   ORANGE = "orange",
+  PEACH_PUREE = "peach puree",
   PINEAPPLE = "pineapple",
 }
 
@@ -94,9 +96,10 @@ export enum MiscellaneousIngredients {
 export enum Preparations {
   COMBINE = "combine in the glass",
   DRY_SHAKE = "shake without ice",
+  FLOAT = "pour float ingredient on top",
   SHAKE = "shake with ice",
   STIR = "stir with ice",
-  FLOAT = "pour float ingredient on top",
+  TOP = "top with sparkling water or wine"
 }
 
 export enum Units {

@@ -30,6 +30,41 @@ const cocktails: RecipeType[] = [
     ]
   },
   {
+    name: "Adonis",
+    ingredients: [
+      { ingredient: Spirits.SHERRY, quantity: 1.5, units: Units.OUNCE},
+      { ingredient: Spirits.VERMOUTH_ITALIAN, quantity: 1.5, units: Units.OUNCE},
+      { ingredient: Bitters.ORANGE, quantity: 2, units: Units.DASH},
+    ],
+    preparation: [
+      Preparations.STIR
+    ],
+    servedIn: Vessels.COCKTAIL,
+    servedWithIce: false,
+    garnishes: [
+      Garnishes.ORANGE_PEEL
+    ]
+  },
+  {
+    name: "Air Mail",
+    ingredients: [
+      { ingredient: Spirits.RUM_AGED, quantity: 1.5, units: Units.OUNCE},
+      { ingredient: Juices.LIME, quantity: 0.75, units: Units.OUNCE},
+      { ingredient: SyrupsAndSweeteners.HONEY, quantity: 0.5, units: Units.OUNCE},
+      { ingredient: Spirits.SPARLKING, quantity: 1.5, units: Units.OUNCE},
+    ],
+    preparation: [
+      Preparations.DRY_SHAKE,
+      Preparations.SHAKE,
+      Preparations.TOP,
+    ],
+    servedIn: Vessels.COCKTAIL,
+    servedWithIce: false,
+    garnishes: [
+      Garnishes.ORANGE_PEEL
+    ]
+  },
+  {
     name: "Brandy and Benedictine",
     ingredients: [
       { ingredient: Spirits.BRANDY, quantity: 1.5, units: Units.OUNCE},
