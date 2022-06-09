@@ -5,7 +5,9 @@
   "main": "dist/index.js",
   "type": "module",
   "scripts": {
-    "compile": "tsc"
+    "compile": "tsc && tsc-alias",
+    "watch": "concurrently \"tsc -w\" \"tsc-alias -w\"",
+    "drill": "node ."
   },
   "keywords": [],
   "author": "alexandermichaud-drizly",
@@ -14,6 +16,8 @@
     "inquirer": "^8.2.4"
   },
   "devDependencies": {
-    "@types/node": "^17.0.41"
+    "@types/node": "^17.0.41",
+    "concurrently": "^7.2.1",
+    "tsc-alias": "^1.6.9"
   }
 }

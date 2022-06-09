@@ -1,7 +1,12 @@
+export enum GameModes {
+  RECIPE_MODE = "Full Recipe",
+  MISSING_INGREDIENT_MODE = "Missing Ingredient",
+}
+
 export enum Vessels {
   COUP = "coup",
-  HIGHBALL = "highball",
-  MARTINI = "martini",
+  HIGHBALL = "highball glass",
+  MARTINI = "martini glass",
   MULE = "mule mug",
   ROCKS = "rocks glass",
 }
@@ -88,6 +93,7 @@ export enum Preparations {
   DRY_SHAKE = "shake without ice",
   SHAKE = "shake with ice",
   STIR = "stir with ice",
+  FLOAT = "pour float ingredient on top",
 }
 
 export enum Quantities {
@@ -105,9 +111,3 @@ export enum Garnishes {
   LEMON_WHEEL = "wheel of lemon",
   LIME_WHEEL = "wheel of lime",
 }
-
-export type VesselsType = `${Vessels}`;
-export type IngredientTypes = `${Spirits}` | `${Bitters}` |`${Juices}` | `${SyrupsAndSweeteners}` | `${MiscellaneousIngredients}`;
-export type PreparationTypes = `${Preparations}`;
-export type QuantityTypes = `${Quantities}`;
-export type IngredientsWithQuantities = { ingredient: IngredientTypes, quanitity: IngredientTypes };

@@ -12,4 +12,9 @@
     "inlineSources": true
   },
   "exclude": ["node_modules", "dist"],
+  "include": ["src/**/*"],
+  "tsc-alias": {
+    "verbose": false,
+    "resolveFullPaths": true,
+  },
 }

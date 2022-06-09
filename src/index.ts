@@ -1,24 +1,13 @@
 #!/usr/bin/env node
 import inquirer from 'inquirer';
-import { VesselsType, IngredientsWithQuantities, PreparationTypes, QuantityTypes } from './constants';
+import { GameModes } from './constants';
+// import { RecipeType } from './types';
 
-type Recipe = {
-  name: string;
-  ingredients: Set<IngredientsWithQuantities>;
-  garnish: string;
-  preparation: PreparationTypes[];
-  servedIn: VesselsType;
-}
-
-const answer = await inquirer.prompt({
-  name: "test_prompt",
+let answer = await inquirer.prompt({
+  name: "gameMode",
   type: "list",
-  message: "Choose from the list",
-  choices: [
-    "Option 1",
-    "Option 2",
-    "Option 3",
-  ]
+  message: "Choose how you'd like to practice",
+  choices: Object.values(GameModes),
 });
 
-console.log(`Your answer was ${answer.test_prompt}`);
+console.log(`Your answer was ${answer.gameMode}`);
