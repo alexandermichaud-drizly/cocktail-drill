@@ -128,4 +128,6 @@ export enum Garnishes {
   LIME_WHEEL = "wheel of lime",
   ORANGE_EXPRESSED = "expression of orange peel",
   ORANGE_PEEL = "peel of orange",
+  RIM_SALT = "salt the rim of the glass",
+  RIM_SUGAR = "sugar the rim of the glass",
 }

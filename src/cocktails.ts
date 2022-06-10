@@ -168,6 +168,57 @@ const cocktails: RecipeType[] = [
     ]
   },
   {
+    name: "Bamboo",
+    ingredients: [
+      { ingredient: Spirits.SHERRY, quantity: 1.5, units: Units.OUNCE},
+      { ingredient: Spirits.VERMOUTH_FRENCH, quantity: 1.5, units: Units.OUNCE},
+      { ingredient: SyrupsAndSweeteners.DEMERARA, quantity: 1, units: Units.TEASPOON},
+      { ingredient: Bitters.ANGOSTURA, quantity: 1, units: Units.DASH},
+      { ingredient: Bitters.ORANGE, quantity: 1, units: Units.DASH},
+    ],
+    preparation: [
+      Preparations.STIR
+    ],
+    servedIn: Vessels.COCKTAIL,
+    servedWithIce: false,
+    garnishes: [
+      Garnishes.LEMON_EXPRESSED,
+    ]
+  },
+  {
+    name: "Beachcomber",
+    ingredients: [
+      { ingredient: Spirits.RUM_UNAGED, quantity: 1.5, units: Units.OUNCE},
+      { ingredient: Spirits.ORANGE, quantity: 0.5, units: Units.OUNCE},
+      { ingredient: Juices.LIME, quantity: 0.5, units: Units.OUNCE},
+      { ingredient: Spirits.MARASCHINO, quantity: 1, units: Units.TEASPOON},
+      { ingredient: SyrupsAndSweeteners.SIMPLE, quantity: 0.25, units: Units.OUNCE, optional: true },
+    ],
+    preparation: [
+      Preparations.SHAKE
+    ],
+    servedIn: Vessels.COCKTAIL,
+    servedWithIce: false,
+    garnishes: [
+      Garnishes.RIM_SUGAR
+    ]
+  },
+  {
+    name: "Bee's Knees",
+    ingredients: [
+      { ingredient: Spirits.GIN_LONDON, quantity: 2, units: Units.OUNCE},
+      { ingredient: Juices.LEMON, quantity: 1, units: Units.OUNCE},
+      { ingredient: SyrupsAndSweeteners.HONEY, quantity: 0.75, units: Units.OUNCE},
+    ],
+    preparation: [
+      Preparations.DRY_SHAKE,
+      Preparations.SHAKE
+    ],
+    servedIn: Vessels.COCKTAIL,
+    servedWithIce: false,
+  },
+  
+  {
     name: "Corpse Reviver No. 1",
     ingredients: [
       { ingredient: Spirits.BRANDY, quantity: 2, units: Units.OUNCE},
