@@ -24,7 +24,7 @@ switch(mode) {
     break;
   }
   case Modes.SEARCH_MODE: {
-    searchRecipes();
+    await searchRecipes();
     break;
   }
 }

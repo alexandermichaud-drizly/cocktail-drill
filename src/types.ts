@@ -4,7 +4,8 @@ type VesselsType = `${Vessels}`;
 type IngredientTypes = `${Spirits}` | `${Bitters}` |`${Juices}` | `${SyrupsAndSweeteners}` | `${MiscellaneousIngredients}`;
 type PreparationTypes = `${Preparations}`;
 type QuantityTypes = `${Units}`;
-type IngredientsWithQuantities = { ingredient: IngredientTypes, units: QuantityTypes, quantity: number, optional?: boolean };
+
+export type IngredientsWithQuantities = { ingredient: IngredientTypes, units: QuantityTypes, quantity: number, optional?: boolean };
 
 export type RecipeType = {
   name: string;

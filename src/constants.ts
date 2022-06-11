@@ -7,6 +7,7 @@ export enum Modes {
 export enum Vessels {
   COCKTAIL = "cocktail glass",
   COUP = "coup",
+  FLUTE = "champagne flute",
   HIGHBALL = "highball glass",
   MARGARITA_GLASS = "margarita glass",
   MARTINI = "martini glass",
@@ -30,9 +31,12 @@ export enum Spirits {
   CAMPARI = "campari",
   CHARTREUSE_GREEN = "green chartreuse",
   CHARTREUSE_YELLOW = "yellow chartreuse",
+  COFFEE_LIQUEUR = "coffee liqueur",
+  CYNAR = "cynar",
   GALLIANO = "galliano",
   GIN_LONDON = "london dry gin",
   GIN_OLD_TOM = "old tom gin",
+  HEERING = "cherry heering",
   KIRSCH = "kirschwasser",
   MARASCHINO = "maraschino liqueur",
   MENTHE = "creme de menthe",
@@ -68,13 +72,14 @@ export enum Bitters {
 }
 
 export enum Juices {
-  CRANBERRY = "cranberry",
-  GRAPEFRUIT = "grapefruit",
-  LEMON = "lemon",
-  LIME = "lime",
-  ORANGE = "orange",
+  CRANBERRY = "cranberry juice",
+  GRAPEFRUIT = "grapefruit juice",
+  LEMON = "lemon juice",
+  LIME = "lime juice",
+  ORANGE = "orange juice",
   PEACH_PUREE = "peach puree",
-  PINEAPPLE = "pineapple",
+  PINEAPPLE = "pineapple juice",
+  TOMATO = "tomato juice"
 }
 
 export enum SyrupsAndSweeteners {
@@ -91,18 +96,22 @@ export enum SyrupsAndSweeteners {
 }
 
 export enum MiscellaneousIngredients {
+  PEPPER = "black pepper", 
+  CELERY_SALT = "celery salt",
   CREAM_HEAVY = "heavy cream",
   CREAM_LIGHT = "light cream or half-and-half",
   EGG = "whole egg",
   EGG_WHITE = "egg white",
   ORANGE_FLOWER_WATER = "orange flower water",
   SELTZER = "seltzer",
+  WORCESTERSHIRE = "worcestershire sauce"
 }
 
 export enum Preparations {
   COMBINE = "combine in the glass",
   DRY_SHAKE = "shake without ice",
   FLOAT = "pour float ingredient on top",
+  ROLL = "roll between two tins with ice",
   SHAKE = "shake with ice",
   STIR = "stir with ice",
   STRAIN = "pour through a fine strainer",
@@ -114,6 +123,7 @@ export enum Units {
   FRUIT = "fruit(s) worth of juice",
   OUNCE = "oz.",
   RINSE = "rinse",
+  PINCH = "pinch",
   SPLASH = "splash",
   TEASPOON = "tsp.",
 }
@@ -122,9 +132,12 @@ export enum Garnishes {
   CHERRY = "cherry",
   LEMON_EXPRESSED = "expression of lemon peel", 
   LEMON_PEEL = "peel of lemon",
+  LEMON_TWIST = "twist of lemon",
+  LEMON_WEDGE = "wedge of lemon (squeezed and dropped in)",
   LEMON_WHEEL = "wheel of lemon",
   LIME_EXPRESSED = "expression of lime peel", 
   LIME_PEEL = "peel of lime",
+  LIME_TWIST = "twist of lime",
   LIME_WHEEL = "wheel of lime",
   ORANGE_EXPRESSED = "expression of orange peel",
   ORANGE_PEEL = "peel of orange",

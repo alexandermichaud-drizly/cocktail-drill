@@ -217,7 +217,120 @@ const cocktails: RecipeType[] = [
     servedIn: Vessels.COCKTAIL,
     servedWithIce: false,
   },
-  
+  {
+    name: "Bellini",
+    ingredients: [
+      { ingredient: Juices.PEACH_PUREE, quantity: 1.5, units: Units.OUNCE},
+      { ingredient: Spirits.SPARLKING, quantity: 4.5, units: Units.OUNCE},
+    ],
+    preparation: [
+      Preparations.COMBINE,
+      Preparations.STIR
+    ],
+    servedIn: Vessels.FLUTE,
+    servedWithIce: false,
+    garnishes: [
+      Garnishes.LEMON_TWIST
+    ]
+  },
+  {
+    name: "Bijou",
+    ingredients: [
+      { ingredient: Spirits.GIN_LONDON, quantity: 1, units: Units.OUNCE},
+      { ingredient: Spirits.VERMOUTH_ITALIAN, quantity: 1, units: Units.OUNCE},
+      { ingredient: Spirits.CHARTREUSE_GREEN, quantity: 0.75, units: Units.OUNCE},
+      { ingredient: Bitters.ORANGE, quantity: 1, units: Units.DASH},
+    ],
+    preparation: [
+      Preparations.STIR
+    ],
+    servedIn: Vessels.COCKTAIL,
+    servedWithIce: false,
+    garnishes: [
+      Garnishes.CHERRY
+    ]
+  },
+  {
+    name: "Bitter Giuseppe",
+    ingredients: [
+      { ingredient: Spirits.VERMOUTH_ITALIAN, quantity: 1, units: Units.OUNCE},
+      { ingredient: Spirits.CYNAR, quantity: 1, units: Units.OUNCE},
+      { ingredient: Bitters.ORANGE, quantity: 2, units: Units.DASH},
+    ],
+    preparation: [
+      Preparations.COMBINE,
+      Preparations.STIR
+    ],
+    servedIn: Vessels.ROCKS,
+    servedWithIce: true,
+    garnishes: [
+      Garnishes.LEMON_WEDGE
+    ]
+  },
+  {
+    name: "Black Russian",
+    ingredients: [
+      { ingredient: Spirits.VODKA, quantity: 1.5, units: Units.OUNCE},
+      { ingredient: Spirits.COFFEE_LIQUEUR, quantity: 0.75, units: Units.OUNCE},
+    ],
+    preparation: [
+      Preparations.COMBINE,
+      Preparations.STIR
+    ],
+    servedIn: Vessels.ROCKS,
+    servedWithIce: true,
+  },
+  {
+    name: "Blinker",
+    ingredients: [
+      { ingredient: Spirits.RYE, quantity: 2, units: Units.OUNCE},
+      { ingredient: Juices.GRAPEFRUIT, quantity: 1, units: Units.OUNCE},
+      { ingredient: SyrupsAndSweeteners.GRENADINE, quantity: 0.5, units: Units.OUNCE},
+    ],
+    preparation: [
+      Preparations.SHAKE
+    ],
+    servedIn: Vessels.COCKTAIL,
+    servedWithIce: false,
+  },
+  {
+    name: "Blood and Sand",
+    ingredients: [
+      { ingredient: Spirits.SCOTCH_BLENDED, quantity: 1.25, units: Units.OUNCE},
+      { ingredient: Spirits.VERMOUTH_ITALIAN, quantity: 0.75, units: Units.OUNCE},
+      { ingredient: Spirits.HEERING, quantity: 0.75, units: Units.OUNCE},
+      { ingredient: Juices.ORANGE, quantity: 0.75, units: Units.OUNCE},
+    ],
+    preparation: [
+      Preparations.SHAKE,
+      Preparations.STRAIN
+    ],
+    servedIn: Vessels.COCKTAIL,
+    servedWithIce: false,
+    garnishes: [
+      Garnishes.ORANGE_EXPRESSED
+    ]
+  },
+  {
+    name: "Bloody Mary",
+    ingredients: [
+      { ingredient: Spirits.VODKA, quantity: 2, units: Units.OUNCE},
+      { ingredient: Juices.TOMATO, quantity: 4, units: Units.OUNCE},
+      { ingredient: Juices.LEMON, quantity: 0.5, units: Units.OUNCE},
+      { ingredient: MiscellaneousIngredients.WORCESTERSHIRE, quantity: 3, units: Units.DASH},
+      { ingredient: MiscellaneousIngredients.CELERY_SALT, quantity: 1, units: Units.PINCH},
+      { ingredient: MiscellaneousIngredients.PEPPER, quantity: 1, units: Units.PINCH},
+      { ingredient: SyrupsAndSweeteners.DEMERARA, quantity: 1, units: Units.TEASPOON, optional: true}, 
+    ],
+    preparation: [
+      Preparations.ROLL
+    ],
+    servedIn: Vessels.HIGHBALL,
+    servedWithIce: false,
+    garnishes: [
+      Garnishes.RIM_SALT
+    ]
+  },
   {
     name: "Corpse Reviver No. 1",
     ingredients: [
