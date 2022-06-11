@@ -1,4 +1,5 @@
-import { RecipeType, IngredientsWithQuantities } from "./types";
+import { RecipeType } from "./types";
+import inquirer from 'inquirer';
 
 export const printRecipe = ({ name, ingredients, garnishes, preparation, servedIn, servedWithIce}: RecipeType) => {
   const output = ['', name, '', 'Ingredients:'];
@@ -20,3 +21,24 @@ export const flattenIngredients = (cocktails: RecipeType[]) => cocktails.map(coc
     ingredients: ingredientsArr,
   }
 });
+
+export const numberToDrill = async (cocktails: RecipeType[]) => {
+  const inquiry = await inquirer.prompt({
+    name: "cocktailsToDrill",
+    type: "input",
+    message: "Enter the number of recipes you'd like to drill. Hit enter if you'd like to drill the full set."
+  });
+
+  const maxRecipes = cocktails.length;
+  const { cocktailsToDrill } = inquiry;
+  if (isNaN(cocktailsToDrill)) {
+    console.log('Input is not a number, defaulting to full recipe list.');
+    return maxRecipes;
+  }
+  if (!cocktailsToDrill || cocktailsToDrill > maxRecipes) {
+    console.log('Drilling full recipe list.'); 
+    return maxRecipes;
+  }
+  console.log(`Drilling ${cocktailsToDrill} recipes.`); 
+  return cocktailsToDrill;
+};
