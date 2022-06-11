@@ -39,11 +39,12 @@ export enum Spirits {
   HEERING = "cherry heering",
   KIRSCH = "kirschwasser",
   MARASCHINO = "maraschino liqueur",
-  MENTHE = "creme de menthe",
+  MENTHE = "crème de menthe",
   MEZCAL_ANEJO = "añejo mezcal",
   MEZCAL_BLANCO = "blanco mezcal",
   MEZCAL_REPASADO = "repasado mezcal",
-  NOYAUX = "creme de noyaux",
+  MURE = "crème de mûre",
+  NOYAUX = "crème de noyaux",
   ORANGE = "curaçao or triple sec",
   RUM_UNAGED = "unaged rum",
   RUM_AGED = "lightly aged rum",
@@ -60,7 +61,7 @@ export enum Spirits {
   TEQUILA_REPASADO = "repasado tequila",
   VERMOUTH_FRENCH = "dry vermouth",
   VERMOUTH_ITALIAN = "sweet vermouth",
-  VIOLETTE = "creme de violette",
+  VIOLETTE = "crème de violette",
   VODKA = "vodka",
   WINE_RED = "red wine",
 }
@@ -109,8 +110,10 @@ export enum MiscellaneousIngredients {
 
 export enum Preparations {
   COMBINE = "combine in the glass",
+  CRUSHED_ICE = "serve over crushed ice",
+  DRIZZLE = "drizzle last ingredient on top",
   DRY_SHAKE = "shake without ice",
-  FLOAT = "pour float ingredient on top",
+  FLOAT = "float last ingredient on top",
   ROLL = "roll between two tins with ice",
   SHAKE = "shake with ice",
   STIR = "stir with ice",
@@ -121,6 +124,7 @@ export enum Preparations {
 export enum Units {
   DASH = "dash",
   FRUIT = "fruit(s) worth of juice",
+  OTHER = "n/a",
   OUNCE = "oz.",
   RINSE = "rinse",
   PINCH = "pinch",
@@ -129,9 +133,11 @@ export enum Units {
 }
 
 export enum Garnishes {
+  BLACKBERRY = "1-2 blackberries speared on a toothpick",
   CHERRY = "cherry",
   LEMON_EXPRESSED = "expression of lemon peel", 
   LEMON_PEEL = "peel of lemon",
+  LEMON_SLICE = "slice of lemon",
   LEMON_TWIST = "twist of lemon",
   LEMON_WEDGE = "wedge of lemon (squeezed and dropped in)",
   LEMON_WHEEL = "wheel of lemon",
@@ -139,6 +145,7 @@ export enum Garnishes {
   LIME_PEEL = "peel of lime",
   LIME_TWIST = "twist of lime",
   LIME_WHEEL = "wheel of lime",
+  NUTMEG = "a sprinkle of grated nutmeg",
   ORANGE_EXPRESSED = "expression of orange peel",
   ORANGE_PEEL = "peel of orange",
   RIM_SALT = "salt the rim of the glass",

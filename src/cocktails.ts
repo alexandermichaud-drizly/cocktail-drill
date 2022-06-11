@@ -332,6 +332,89 @@ const cocktails: RecipeType[] = [
     ]
   },
   {
+    name: "Boulevardier",
+    ingredients: [
+      { ingredient: Spirits.BOURBON, quantity: 2, units: Units.OUNCE},
+      { ingredient: Spirits.VERMOUTH_ITALIAN, quantity: 1, units: Units.OUNCE},
+      { ingredient: Spirits.CAMPARI, quantity: 1, units: Units.OUNCE},
+    ],
+    preparation: [
+      Preparations.STIR
+    ],
+    servedIn: Vessels.COCKTAIL,
+    servedWithIce: false,
+    garnishes: [
+      Garnishes.ORANGE_PEEL
+    ]
+  },
+  {
+    name: "Bramble",
+    ingredients: [
+      { ingredient: Spirits.GIN_LONDON, quantity: 2, units: Units.OUNCE},
+      { ingredient: Juices.LEMON, quantity: 0.75, units: Units.OUNCE},
+      { ingredient: SyrupsAndSweeteners.SIMPLE, quantity: 0.5, units: Units.OUNCE},
+      { ingredient: Spirits.MURE, quantity: 0.5, units: Units.OUNCE},
+    ],
+    preparation: [
+      Preparations.SHAKE,
+      Preparations.CRUSHED_ICE,
+      Preparations.DRIZZLE
+    ],
+    servedIn: Vessels.ROCKS,
+    servedWithIce: true,
+    garnishes: [
+      Garnishes.LEMON_SLICE,
+      Garnishes.BLACKBERRY
+    ]
+  },
+  {
+    name: "Brandy Alexander",
+    ingredients: [
+      { ingredient: Spirits.BRANDY, quantity: 1, units: Units.OUNCE},
+      { ingredient: Spirits.CACAO, quantity: 1, units: Units.OUNCE},
+      { ingredient: MiscellaneousIngredients.CREAM_LIGHT, quantity: 1.5, units: Units.OUNCE},
+    ],
+    preparation: [
+      Preparations.SHAKE,
+    ],
+    servedIn: Vessels.COCKTAIL,
+    servedWithIce: false,
+    garnishes: [
+      Garnishes.NUTMEG
+    ]
+  },
+  {
+    name: "Brandy Flip",
+    ingredients: [
+      { ingredient: Spirits.BRANDY, quantity: 1.5, units: Units.OUNCE},
+      { ingredient: SyrupsAndSweeteners.DEMERARA, quantity: 0.5, units: Units.OUNCE},
+      { ingredient: MiscellaneousIngredients.EGG, quantity: 1, units: Units.OTHER},
+    ],
+    preparation: [
+      Preparations.DRY_SHAKE,
+      Preparations.SHAKE,
+    ],
+    servedIn: Vessels.COCKTAIL,
+    servedWithIce: false,
+    garnishes: [
+      Garnishes.NUTMEG
+    ]
+  },
+  {
+    name: "Bronx",
+    ingredients: [
+      { ingredient: Spirits.GIN_LONDON, quantity: 1.5, units: Units.OUNCE},
+      { ingredient: Spirits.VERMOUTH_ITALIAN, quantity: 0.5, units: Units.OUNCE},
+      { ingredient: Spirits.VERMOUTH_FRENCH, quantity: 0.5, units: Units.OUNCE},
+      { ingredient: Juices.ORANGE, quantity: 0.75, units: Units.OUNCE},
+    ],
+    preparation: [
+      Preparations.SHAKE
+    ],
+    servedIn: Vessels.COCKTAIL,
+    servedWithIce: false,
+  },
+  {
     name: "Corpse Reviver No. 1",
     ingredients: [
       { ingredient: Spirits.BRANDY, quantity: 2, units: Units.OUNCE},
