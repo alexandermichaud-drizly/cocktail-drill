@@ -20,7 +20,7 @@ switch(mode) {
     break;
   }
   case Modes.MISSING_INGREDIENT_MODE: {
-    missingIngredients();
+    await missingIngredients();
     break;
   }
   case Modes.SEARCH_MODE: {
