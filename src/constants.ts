@@ -37,6 +37,7 @@ export enum Spirits {
   GIN_LONDON = "london dry gin",
   GIN_OLD_TOM = "old tom gin",
   HEERING = "cherry heering",
+  KINA = "kina apéritif wine",
   KIRSCH = "kirschwasser",
   MARASCHINO = "maraschino liqueur",
   MENTHE = "crème de menthe",
@@ -50,6 +51,7 @@ export enum Spirits {
   RUM_UNAGED = "unaged rum",
   RUM_AGED = "moderately aged rum",
   RUM_DARK = "dark rum",
+  RUM_LIGHT = "rum lightly aged",
   RUM_OVERPROOF = "overproof rum",
   RUM_151 = "151 proof rum",
   RYE = "rye whiskey",
@@ -64,6 +66,7 @@ export enum Spirits {
   VERMOUTH_ITALIAN = "sweet vermouth",
   VIOLETTE = "crème de violette",
   VODKA = "vodka",
+  VODKA_LEMON = "lemon vodka",
   WINE_RED = "red wine",
 }
 
@@ -102,6 +105,7 @@ export enum SyrupsAndSweeteners {
 export enum MiscellaneousIngredients {
   PEPPER = "black pepper", 
   CELERY_SALT = "celery salt",
+  COLA = "cola",
   CREAM_HEAVY = "heavy cream",
   CREAM_LIGHT = "light cream or half-and-half",
   EGG = "whole egg",
@@ -132,7 +136,7 @@ export enum Units {
   FRUIT_WHOLE = "whole fruit(s)",
   OTHER = "n/a",
   OUNCE = "oz.",
-  RINSE = "rinse",
+  RINSE = "rinse (approximately 1 tsp.)",
   PINCH = "pinch",
   SPLASH = "splash",
   TEASPOON = "tsp.",

@@ -567,6 +567,54 @@ const cocktails: RecipeType[] = [
     servedIn: Vessels.COCKTAIL,
     servedWithIce: false,
   },
+  {
+    name: "Corpse Reviver No. 2",
+    ingredients: [
+      { ingredient: Spirits.GIN_LONDON, quantity: 0.75, units: Units.OUNCE },
+      { ingredient: Spirits.ORANGE, quantity: 0.75, units: Units.OUNCE },
+      { ingredient: Spirits.KINA, quantity: 0.75, units: Units.OUNCE },
+      { ingredient: Juices.LEMON, quantity: 0.75, units: Units.OUNCE },
+      { ingredient: Spirits.ABSINTHE, quantity: 1, units: Units.RINSE },
+    ],
+    preparation: [
+      Preparations.SHAKE
+    ],
+    servedIn: Vessels.COCKTAIL,
+    servedWithIce: false,
+  },
+  {
+    name: "Cosmopolitan",
+    ingredients: [
+      { ingredient: Spirits.VODKA_LEMON, quantity: 2, units: Units.OUNCE},
+      { ingredient: Spirits.ORANGE, quantity: 1, units: Units.OUNCE},
+      { ingredient: Juices.CRANBERRY, quantity: 1, units: Units.OUNCE},
+      { ingredient: Juices.LIME, quantity: 1, units: Units.OUNCE},
+    ],
+    preparation: [
+      Preparations.SHAKE
+    ],
+    servedIn: Vessels.COCKTAIL,
+    servedWithIce: false,
+    garnishes: [
+      Garnishes.LEMON_EXPRESSED
+    ]
+  },
+  {
+    name: "Cuba Libre",
+    ingredients: [
+      { ingredient: Spirits.RUM_LIGHT, quantity: 2, units: Units.OUNCE},
+      { ingredient: MiscellaneousIngredients.COLA, quantity: 4, units: Units.OUNCE},
+    ],
+    preparation: [
+      Preparations.COMBINE,
+      Preparations.STIR
+    ],
+    servedIn: Vessels.HIGHBALL,
+    servedWithIce: true,
+    garnishes: [
+      Garnishes.LIME_WEDGE
+    ]
+  },
 ]
 
 export default cocktails;
