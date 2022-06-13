@@ -476,7 +476,7 @@ const cocktails: RecipeType[] = [
     preparation: [
       Preparations.CRUSHED_ICE,
       Preparations.COMBINE,
-      Preparations.STIR
+      Preparations.SWIZZLE
     ],
     servedIn: Vessels.HIGHBALL,
     servedWithIce: true,
@@ -547,7 +547,8 @@ const cocktails: RecipeType[] = [
     ],
     preparation: [
       Preparations.CRUSHED_ICE,
-      Preparations.STIR
+      Preparations.COMBINE,
+      Preparations.SWIZZLE
     ],
     servedIn: Vessels.ROCKS,
     servedWithIce: true,
@@ -624,6 +625,7 @@ const cocktails: RecipeType[] = [
       { ingredient: SyrupsAndSweeteners.SIMPLE, quantity: 0.75, units: Units.OUNCE},
     ],
     preparation: [
+      Preparations.CRUSHED_ICE,
       Preparations.SHAKE,
       Preparations.STRAIN
     ],
@@ -660,6 +662,73 @@ const cocktails: RecipeType[] = [
     ],
     servedIn: Vessels.FLUTE,
     servedWithIce: false,
+  },
+  {
+    name: "Deep Blue Sea",
+    ingredients: [
+      { ingredient: Spirits.GIN_LONDON, quantity: 2, units: Units.OUNCE},
+      { ingredient: Spirits.KINA, quantity: 0.75, units: Units.OUNCE},
+      { ingredient: Spirits.VIOLETTE, quantity: 0.25, units: Units.OUNCE},
+      { ingredient: Bitters.ORANGE, quantity: 2, units: Units.DASH},
+    ],
+    preparation: [
+      Preparations.STIR
+    ],
+    servedIn: Vessels.COCKTAIL,
+    servedWithIce: false,
+    garnishes: [
+      Garnishes.LEMON_EXPRESSED
+    ]
+  },
+  {
+    name: "Diamondback",
+    ingredients: [
+      { ingredient: Spirits.RYE_HIGH_PROOF, quantity: 1.5, units: Units.OUNCE},
+      { ingredient: Spirits.BRANDY_APPLE, quantity: 0.75, units: Units.OUNCE},
+      { ingredient: Spirits.CHARTREUSE_YELLOW, quantity: 0.75, units: Units.OUNCE},
+    ],
+    preparation: [
+      Preparations.SHAKE
+    ],
+    servedIn: Vessels.COCKTAIL,
+    servedWithIce: false,
+    garnishes: [
+      Garnishes.CHERRY
+    ]
+  },
+  {
+    name: "Division Bell",
+    ingredients: [
+      { ingredient: Spirits.MEZCAL, quantity: 1.5, units: Units.OUNCE},
+      { ingredient: Spirits.APEROL, quantity: 0.75, units: Units.OUNCE},
+      { ingredient: Juices.LIME, quantity: 0.75, units: Units.OUNCE},
+      { ingredient: Spirits.MARASCHINO, quantity: 0.5, units: Units.OUNCE},
+    ],
+    preparation: [
+      Preparations.SHAKE
+    ],
+    servedIn: Vessels.COCKTAIL,
+    servedWithIce: false,
+    garnishes: [
+      Garnishes.ORANGE_PEEL,
+      Garnishes.GRAPEFRUIT_PEEL
+    ]
+  },
+  {
+    name: "Earthquake",
+    ingredients: [
+      { ingredient: Spirits.BRANDY, quantity: 2.5, units: Units.OUNCE},
+      { ingredient: Spirits.ABSINTHE, quantity: 0.25, units: Units.OUNCE},
+    ],
+    preparation: [
+      Preparations.COMBINE,
+      Preparations.STIR,
+    ],
+    servedIn: Vessels.ROCKS,
+    servedWithIce: false,
+    garnishes: [
+      Garnishes.LEMON_EXPRESSED
+    ]
   },
 ]
 

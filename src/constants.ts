@@ -41,9 +41,7 @@ export enum Spirits {
   KIRSCH = "kirschwasser",
   MARASCHINO = "maraschino liqueur",
   MENTHE = "crème de menthe",
-  MEZCAL_ANEJO = "añejo mezcal",
-  MEZCAL_BLANCO = "blanco mezcal",
-  MEZCAL_REPASADO = "repasado mezcal",
+  MEZCAL = "mezcal",
   MURE = "crème de mûre",
   NOYAUX = "crème de noyaux",
   ORANGE = "curaçao or triple sec",
@@ -55,6 +53,7 @@ export enum Spirits {
   RUM_OVERPROOF = "overproof rum",
   RUM_151 = "151 proof rum",
   RYE = "rye whiskey",
+  RYE_HIGH_PROOF = "high-proof rye whiskey",
   SCOTCH_BLENDED = "blended scotch whiskey",
   SCOTCH_SINGLE_MALT = "single malt scotch whiskey",
   SHERRY = "sherry",
@@ -125,7 +124,8 @@ export enum Preparations {
   MUDDLE = "muddle fruits, sugar, and/or bitters",
   ROLL = "roll between two tins with ice",
   SHAKE = "shake with ice",
-  STIR = "stir with ice",
+  STIR = "stir",
+  SWIZZLE = "swizzle ingredients with ice",
   STRAIN = "pour through a fine strainer",
   TOP = "top with sparkling water or wine"
 }
@@ -144,7 +144,8 @@ export enum Units {
 
 export enum Garnishes {
   BLACKBERRY = "1-2 blackberries speared on a toothpick",
-  CHERRY = "cherry",
+  CHERRY = "brandied or maraschino cherry",
+  GRAPEFRUIT_PEEL = "peel of grapefruit",
   LEMON_EXPRESSED = "expression of lemon peel", 
   LEMON_PEEL = "peel of lemon",
   LEMON_SLICE = "slice of lemon",
