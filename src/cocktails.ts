@@ -10,6 +10,7 @@ import {
   Units,
   Garnishes
 } from "./constants";
+import { STATUS_CODES } from "http";
 
 const cocktails: RecipeType[] = [
   {
@@ -614,6 +615,51 @@ const cocktails: RecipeType[] = [
     garnishes: [
       Garnishes.LIME_WEDGE
     ]
+  },
+  {
+    name: "Daiquiri",
+    ingredients: [
+      { ingredient: Spirits.RUM_LIGHT, quantity: 2, units: Units.OUNCE},
+      { ingredient: Juices.LIME, quantity: 0.75, units: Units.OUNCE},
+      { ingredient: SyrupsAndSweeteners.SIMPLE, quantity: 0.75, units: Units.OUNCE},
+    ],
+    preparation: [
+      Preparations.SHAKE,
+      Preparations.STRAIN
+    ],
+    servedIn: Vessels.COCKTAIL,
+    servedWithIce: false,
+    garnishes: [
+      Garnishes.LIME_WHEEL
+    ]
+  },
+  {
+    name: "De La Louisiane",
+    ingredients: [
+      { ingredient: Spirits.RYE, quantity: 1.5, units: Units.OUNCE},
+      { ingredient: Spirits.VERMOUTH_ITALIAN, quantity: 0.75, units: Units.OUNCE},
+      { ingredient: Spirits.BENEDICTINE, quantity: 0.75, units: Units.OUNCE},
+      { ingredient: Bitters.PEYCHAUDS, quantity: 3, units: Units.DASH},
+      { ingredient: Spirits.ABSINTHE, quantity: 1, units: Units.RINSE},
+    ],
+    preparation: [
+      Preparations.STIR
+    ],
+    servedIn: Vessels.COCKTAIL,
+    servedWithIce: false,
+  },
+  {
+    name: "Death in the Afternoon",
+    ingredients: [
+      { ingredient: Spirits.ABSINTHE, quantity: 1.5, units: Units.OUNCE},
+      { ingredient: Spirits.SPARLKING, quantity: 4, units: Units.OUNCE},
+    ],
+    preparation: [
+      Preparations.COMBINE,
+      Preparations.STIR
+    ],
+    servedIn: Vessels.FLUTE,
+    servedWithIce: false,
   },
 ]
 
