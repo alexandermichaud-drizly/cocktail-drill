@@ -465,6 +465,96 @@ const cocktails: RecipeType[] = [
     ]
   }, 
   {
+    name: "Chartreuse Swizzle",
+    ingredients: [
+      { ingredient: Spirits.CHARTREUSE_GREEN, quantity: 1.5, units: Units.OUNCE},
+      { ingredient: Juices.PINEAPPLE, quantity: 1, units: Units.OUNCE},
+      { ingredient: Juices.LIME, quantity: 0.75, units: Units.OUNCE}, 
+      { ingredient: SyrupsAndSweeteners.FALERNUM, quantity: 0.5, units: Units.OUNCE},
+    ],
+    preparation: [
+      Preparations.CRUSHED_ICE,
+      Preparations.COMBINE,
+      Preparations.STIR
+    ],
+    servedIn: Vessels.HIGHBALL,
+    servedWithIce: true,
+    garnishes: [
+      Garnishes.MINT,
+      Garnishes.NUTMEG
+    ]
+  }, 
+  {
+    name: "Chrysanthemum",
+    ingredients: [
+      { ingredient: Spirits.VERMOUTH_FRENCH, quantity: 2, units: Units.OUNCE},
+      { ingredient: Spirits.BENEDICTINE, quantity: 0.75, units: Units.OUNCE},
+      { ingredient: Spirits.ABSINTHE, quantity: 1, units: Units.TEASPOON},
+    ],
+    preparation: [
+      Preparations.SHAKE
+    ],
+    servedIn: Vessels.COCKTAIL,
+    servedWithIce: false,
+    garnishes: [
+      Garnishes.ORANGE_EXPRESSED
+    ]
+  }, 
+  {
+    name: "Clover Club",
+    ingredients: [
+      { ingredient: Spirits.GIN_LONDON, quantity: 1.5, units: Units.OUNCE},
+      { ingredient: Spirits.VERMOUTH_FRENCH, quantity: 0.5, units: Units.OUNCE},
+      { ingredient: Juices.LEMON, quantity: 0.5, units: Units.OUNCE},
+      { ingredient: SyrupsAndSweeteners.RASPBERRY, quantity: 0.5, units: Units.OUNCE},
+      { ingredient: MiscellaneousIngredients.EGG_WHITE, quantity: 1, units: Units.OTHER}
+    ],
+    preparation: [
+      Preparations.DRY_SHAKE,
+      Preparations.SHAKE
+    ],
+    servedIn: Vessels.COCKTAIL,
+    servedWithIce: false,
+    garnishes: [
+      Garnishes.RASPBERRY
+    ]
+  }, 
+  {
+    name: "Coffee Cocktail",
+    ingredients: [
+      { ingredient: Spirits.PORT_RUBY, quantity: 2, units: Units.OUNCE},
+      { ingredient: Spirits.BRANDY, quantity: 1, units: Units.OUNCE},
+      { ingredient: SyrupsAndSweeteners.SUGAR, quantity: 1, units: Units.TEASPOON},
+      { ingredient: MiscellaneousIngredients.EGG, quantity: 1, units: Units.OTHER}
+    ],
+    preparation: [
+      Preparations.DRY_SHAKE,
+      Preparations.SHAKE
+    ],
+    servedIn: Vessels.COCKTAIL,
+    servedWithIce: false,
+    garnishes: [
+      Garnishes.NUTMEG
+    ]
+  }, 
+  {
+    name: "Corn 'n' Oil",
+    ingredients: [
+      { ingredient: Spirits.RUM_AGED, quantity: 2, units: Units.OUNCE},
+      { ingredient: SyrupsAndSweeteners.FALERNUM, quantity: 0.5, units: Units.TEASPOON},
+      { ingredient: Bitters.ANGOSTURA, quantity: 2, units: Units.DASH},
+    ],
+    preparation: [
+      Preparations.CRUSHED_ICE,
+      Preparations.STIR
+    ],
+    servedIn: Vessels.ROCKS,
+    servedWithIce: true,
+    garnishes: [
+      Garnishes.LIME_WEDGE
+    ]
+  }, 
+  {
     name: "Corpse Reviver No. 1",
     ingredients: [
       { ingredient: Spirits.BRANDY, quantity: 2, units: Units.OUNCE},
