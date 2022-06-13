@@ -415,6 +415,56 @@ const cocktails: RecipeType[] = [
     servedWithIce: false,
   },
   {
+    name: "Caipirinha",
+    ingredients: [
+      { ingredient: Spirits.CACHACA, quantity: 2, units: Units.OUNCE},
+      { ingredient: MiscellaneousIngredients.LIME_QUARTERED, quantity: 1, units: Units.FRUIT_WHOLE},
+      { ingredient: SyrupsAndSweeteners.SUGAR, quantity: 2, units: Units.TEASPOON},
+    ],
+    preparation: [
+      Preparations.MUDDLE,
+      Preparations.COMBINE,
+      Preparations.STIR
+    ],
+    servedIn: Vessels.ROCKS,
+    servedWithIce: true,
+  }, 
+  {
+    name: "Cape Codder",
+    ingredients: [
+      { ingredient: Spirits.VODKA, quantity: 1.5, units: Units.OUNCE},
+      { ingredient: Juices.CRANBERRY, quantity: 4, units: Units.OUNCE},
+    ],
+    preparation: [
+      Preparations.COMBINE,
+      Preparations.STIR
+    ],
+    servedIn: Vessels.HIGHBALL,
+    servedWithIce: true,
+    garnishes: [
+      Garnishes.LIME_WEDGE,
+    ]
+  }, 
+  {
+    name: "Champagne Cocktail",
+    ingredients: [
+      { ingredient: Spirits.SPARLKING, quantity: 5, units: Units.OUNCE},
+      { ingredient: SyrupsAndSweeteners.SUGAR_CUBE, quantity: 1, units: Units.OTHER},
+      { ingredient: Bitters.ANGOSTURA, quantity: 2, units: Units.DASH}, 
+    ],
+    preparation: [
+      Preparations.COMBINE,
+      Preparations.STIR
+    ],
+    servedIn: Vessels.FLUTE,
+    servedWithIce: false,
+    garnishes: [
+      Garnishes.LEMON_EXPRESSED,
+      Garnishes.RIM_LEMON,
+      Garnishes.LEMON_TWIST
+    ]
+  }, 
+  {
     name: "Corpse Reviver No. 1",
     ingredients: [
       { ingredient: Spirits.BRANDY, quantity: 2, units: Units.OUNCE},

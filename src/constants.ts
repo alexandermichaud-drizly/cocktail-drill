@@ -73,7 +73,7 @@ export enum Bitters {
 }
 
 export enum Juices {
-  CRANBERRY = "cranberry juice",
+  CRANBERRY = "cranberry juice cocktail",
   GRAPEFRUIT = "grapefruit juice",
   LEMON = "lemon juice",
   LIME = "lime juice",
@@ -94,6 +94,7 @@ export enum SyrupsAndSweeteners {
   ORGEAT = "orgeat",
   SIMPLE = "simple syrup",
   SUGAR = "sugar",
+  SUGAR_CUBE = "sugar cube",
 }
 
 export enum MiscellaneousIngredients {
@@ -103,6 +104,7 @@ export enum MiscellaneousIngredients {
   CREAM_LIGHT = "light cream or half-and-half",
   EGG = "whole egg",
   EGG_WHITE = "egg white",
+  LIME_QUARTERED = "whole lime, cut into quarters",
   ORANGE_FLOWER_WATER = "orange flower water",
   SELTZER = "seltzer",
   WORCESTERSHIRE = "worcestershire sauce"
@@ -114,6 +116,7 @@ export enum Preparations {
   DRIZZLE = "drizzle last ingredient on top",
   DRY_SHAKE = "shake without ice",
   FLOAT = "float last ingredient on top",
+  MUDDLE = "muddle fruits, sugar, and/or bitters",
   ROLL = "roll between two tins with ice",
   SHAKE = "shake with ice",
   STIR = "stir with ice",
@@ -124,6 +127,7 @@ export enum Preparations {
 export enum Units {
   DASH = "dash",
   FRUIT = "fruit(s) worth of juice",
+  FRUIT_WHOLE = "whole fruit(s)",
   OTHER = "n/a",
   OUNCE = "oz.",
   RINSE = "rinse",
@@ -144,10 +148,12 @@ export enum Garnishes {
   LIME_EXPRESSED = "expression of lime peel", 
   LIME_PEEL = "peel of lime",
   LIME_TWIST = "twist of lime",
+  LIME_WEDGE = "wedge of lime (squeezed and dropped in)",
   LIME_WHEEL = "wheel of lime",
   NUTMEG = "a sprinkle of grated nutmeg",
   ORANGE_EXPRESSED = "expression of orange peel",
   ORANGE_PEEL = "peel of orange",
+  RIM_LEMON = "lemon run around the rim of the glass",
   RIM_SALT = "salt the rim of the glass",
   RIM_SUGAR = "sugar the rim of the glass",
 }
