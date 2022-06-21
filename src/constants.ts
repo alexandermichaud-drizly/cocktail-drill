@@ -124,8 +124,9 @@ export enum Preparations {
   MUDDLE = "muddle fruits, sugar, and/or bitters",
   ROLL = "roll between two tins with ice",
   SHAKE = "shake with ice",
+  SHAKE_MINUTE = "shake for over a minute",
   STIR = "stir",
-  SWIZZLE = "swizzle ingredients with ice",
+  SWIZZLE = "swizzle ingredients with crushed ice",
   STRAIN = "pour through a fine strainer",
   TOP = "top with sparkling water or wine"
 }
@@ -134,6 +135,7 @@ export enum Units {
   DASH = "dash",
   FRUIT = "fruit(s) worth of juice",
   FRUIT_WHOLE = "whole fruit(s)",
+  LEAVES = "leaves",
   OTHER = "n/a",
   OUNCE = "oz.",
   RINSE = "rinse (approximately 1 tsp.)",

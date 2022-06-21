@@ -1,12 +1,13 @@
 import { RecipeType } from "./types";
 import inquirer from 'inquirer';
+import { Preparations } from "./constants";
 
 export const printRecipe = ({ name, ingredients, garnishes, preparation, servedIn, servedWithIce}: RecipeType) => {
   const output = ['', name, '', 'Ingredients:'];
   ingredients.forEach(x => output.push(`${x.quantity} ${x.units} ${x.ingredient}`));
   output.push('','Prepation:');
-  preparation.forEach(x => output.push(x));
-  output.push('',`Serve in a ${servedIn} with${servedWithIce ? '' : 'out'} ice`);
+  preparation.forEach(x => {if (x !== Preparations.CRUSHED_ICE) output.push(x)});
+  output.push('',`Serve in a ${servedIn} with${servedWithIce ? '' : 'out'} ${servedWithIce && preparation.includes(Preparations.CRUSHED_ICE) ? 'crushed' : ''} ice`);
   if (garnishes) output.push(`Garnish with ${garnishes.map((x, i) => (i === garnishes.length - 1) ? x : `${x},`).join(' ')}`);
   output.push('');
 

@@ -160,6 +160,7 @@ const cocktails: RecipeType[] = [
       { ingredient: Spirits.BENEDICTINE, quantity: 0.75, units: Units.OUNCE},
     ],
     preparation: [
+      Preparations.COMBINE,
       Preparations.STIR
     ],
     servedIn: Vessels.ROCKS,
